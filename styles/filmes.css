@@ -12,7 +12,7 @@
 }
 
 .photo{
-    background-image: url("../assets/paw-patrol-capa.jpg");
+    background-image: url("../assets/monica_cine_gibi_2_capa.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -40,8 +40,7 @@
     height: 100%;
     z-index: 1 ;
 }
-
-/* @media only screen and (max-width: 1450px){
+@media only screen and (max-width: 1450px){
     .banner{
         grid-template-columns: 70vw 30vw;
     }
@@ -60,7 +59,6 @@
     }
 
     .photo{
-        background-image: url("../assets/paw-patrol-capa.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -83,13 +81,17 @@
 
     .photo .effect{
         background: rgb(2,0,36);
-        background: linear-gradient(180deg, rgba(2,0,36,0.  05085784313725494) 0%, rgba(55,55,68,0.3897934173669467) 40%, rgba(0,0,0,1) 100%);
+        background: linear-gradient(180deg, rgba(2,0,36,0.05085784313725494) 0%, rgba(55,55,68,0.3897934173669467) 40%, rgba(0,0,0,1) 100%);
+        width: 100%;
+        height: 100%;
+        z-index: 1 ;
     }
 }
 
 @media only screen and (max-width: 585px){
     .banner{
         grid-template-rows: 30vh;
+        height: 50vh;
     }
 }
 
@@ -98,21 +100,4 @@
         grid-template-rows: 25vh 2vh;
         height: 40vh;
     }
-
-    .photo{
-        background-image: url("../assets/paw-patrol-capa.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-    }
-
-    .informations{
-        width: 100%;
-        height: 10%;
-    }
-    .photo .effect{
-    z-index: 1  ;
-    }
-} */
+}
