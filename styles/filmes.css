@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    width: 100vw;
+    height: 60vh;
+}
+
+.photo{
+    background-image: url("../assets/paw-patrol-capa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.informations{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.photo .effect{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.05085784313725494) 0%, rgba(55,55,68,0.3897934173669467) 40%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    height: 100%;
+    z-index: 1  ;
+}
+
+@media only screen and (max-width: 1450px){
+    .banner{
+        grid-template-columns: 70vw 30vw;
+    }
+}
+
+@media only screen and (max-width: 1450px){
+    .banner{
+        grid-template-columns: 80vw 20vw;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .banner{
+        grid-template-rows: 40vh 10vh;
+        grid-template-columns: 100vw;
+    }
+
+    .photo{
+        /* background-image: url("../assets/paw-patrol-capa.jpg"); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    
+    .informations{
+        width: 100%;
+        height: 100%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .photo .effect{
+        background: rgb(2,0,36);
+        background: linear-gradient(180deg, rgba(2,0,36,0.05085784313725494) 0%, rgba(55,55,68,0.3897934173669467) 40%, rgba(0,0,0,1) 100%);
+    }
+}
+
+@media only screen and (max-width: 585px){
+    .banner{
+        grid-template-rows: 30vh;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .banner{
+        grid-template-rows: 25vh;
+    }
+}
