@@ -32,16 +32,8 @@ a {
     font-size: 18px;
 }
 
-@media only screen and (max-width: 400px){
-    header{
-        justify-content: center;
-    }
-
-    .navigation{
-        width: 100%;
-    }
-    
-    .logo{
+@media only screen and (max-width: 450px){
+    h1{
         display: none;
     }
 }
